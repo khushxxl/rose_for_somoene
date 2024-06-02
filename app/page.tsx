@@ -15,12 +15,12 @@ export default function Home() {
         onClick={() => setshowPoetry(!showPoetry)}
         className=" absolute bottom-[80px]"
       >
-        <button className="relative inline-flex h-12 overflow-hidden rounded-full p-[1px] focus:outline-none  ">
-          <span className="absolute inset-[-1000%] animate-[spin_2s_linear_infinite] bg-[conic-gradient(from_90deg_at_50%_50%,#E2CBFF_0%,#393BB2_50%,#E2CBFF_100%)]" />
-          <span className="inline-flex h-full w-full cursor-pointer px-8 items-center justify-center rounded-full bg-slate-950 py-1 text-sm font-medium text-white backdrop-blur-3xl">
-            {showPoetry ? "Show Rose 🌹" : " Click Me 🫂"}
-          </span>
-        </button>
+        <div className="relative focus:outline-none inline-flex group">
+          <div className="absolute focus:outline-none hover:outline-none transition-all duration-1000 opacity-70 -inset-px bg-gradient-to-r from-[#44BCFF] via-[#FF44EC] to-[#FF675E] rounded-full blur-lg group-hover:opacity-100 group-hover:-inset-1 group-hover:duration-200 animate-tilt"></div>
+          <div className="relative focus:outline-none hover:outline-none  inline-flex items-center justify-center px-8 py-3 text-white transition-all duration-200 bg-gray-900 font-pj rounded-full ">
+            {showPoetry ? "Show Rose 🌹" : "Click Me 🫂"}
+          </div>
+        </div>
       </div>
     </main>
   );
